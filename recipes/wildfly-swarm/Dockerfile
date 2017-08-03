@@ -58,3 +58,6 @@ COPY ["entrypoint.sh","/home/user/entrypoint.sh"]
 
 ENTRYPOINT ["/home/user/entrypoint.sh"]
 CMD tail -f /dev/null
+
+LABEL che:server:8080:ref=tomcat che:server:8080:protocol=http che:server:8000:ref=tomcat-jpda che:server:8000:protocol=http
+
